@@ -1,8 +1,9 @@
 language: csharp
 mono: none
 dotnet: 3.1
-solution: OOP_LAB_1_19.sln //Виконавчий файл (заміняєте іменем вашого файлу )
-script: //
+solution: OOP_LAB_1_19.sln
+script:
+  - dotnet restore
+  - dotnet test
 
-  - dotnet restore //два пробіла перед командою обов’язково
-  - dotnet test //два пробіла перед командою обов’язково
+
